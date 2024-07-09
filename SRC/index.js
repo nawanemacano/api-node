@@ -4,21 +4,25 @@ import { createTable } from './controller/tarefa.js'
 
 openDB();
 const app = express();
-app.use(express.json());
+index.use(express.json());
 
 createTable();
 
-app. get('/', (req, res) =>{
+index. get('/tasks', (req, res) =>{
     res.send("API RESTful rodando com node.js");
 
 })
 
-app.post('/tarefa1', (req, res) =>{
+index.post('/tasks', (req, res) =>{
     console.log(req.body);
     res.json({
         "statuscode": 200
     })
 })
 
-app.listen(3000, ()=>console.log("API RODANDO"));
+index.put('/tasks', (req, res) =>{
+
+})
+
+index.listen(3000, ()=>console.log("API RODANDO"));
 
