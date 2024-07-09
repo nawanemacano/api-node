@@ -1,0 +1,83 @@
+Introdução
+
+Esta documentação descreve uma API RESTful desenvolvida utilizando Node.js, Express e SQLite para realizar operações CRUD (Create, Read, Update, Delete) em recursos de tarefas e pessoas.
+
+Tecnologias Utilizadas
+
+Node.js: Ambiente de tempo de execução JavaScript que permite a construção de aplicações de servidor.
+Express: Framework minimalista para Node.js que facilita a criação de APIs RESTful.
+SQLite: Banco de dados leve, rápido e incorporável, ideal para aplicações com requisitos modestos de armazenamento de dados.
+
+Estrutura da API
+
+A API é estruturada de acordo com os princípios RESTful, utilizando os métodos HTTP para operações em recursos:
+
+GET: Para recuperar recursos (ex: listar tarefas, detalhes de uma pessoa).
+
+POST: Para criar novos recursos (ex: adicionar uma nova tarefa, criar uma nova pessoa).
+
+PUT: Para atualizar recursos existentes (ex: modificar uma tarefa, atualizar detalhes de uma pessoa).
+
+DELETE: Para remover recursos (ex: excluir uma tarefa, remover uma pessoa).
+
+Funcionalidades da API
+
+A API oferece as seguintes funcionalidades principais:
+
+Tarefas:
+
+Listagem de todas as tarefas.
+Recuperação de uma tarefa específica pelo seu ID.
+Criação de uma nova tarefa.
+Atualização de uma tarefa existente.
+Exclusão de uma tarefa.
+
+Pessoas:
+
+Listagem de todas as pessoas.
+Recuperação de uma pessoa específica pelo seu ID.
+Criação de uma nova pessoa.
+Atualização dos dados de uma pessoa.
+Exclusão de uma pessoa.
+Configuração e Utilização
+
+Para configurar e utilizar esta API:
+
+Instalação de Dependências:
+
+Instale Node.js e npm (gerenciador de pacotes do Node.js).
+Instale os pacotes necessários executando npm install na raiz do projeto.
+Execução do Servidor:
+
+Inicie o servidor executando node index.js na raiz do projeto.
+
+Endpoints Disponíveis:
+
+Tarefas:
+
+GET /tasks: Lista todas as tarefas.
+GET /tasks/:id: Retorna uma tarefa específica.
+POST /tasks: Cria uma nova tarefa.
+PUT /tasks/:id: Atualiza uma tarefa existente.
+DELETE /tasks/:id: Remove uma tarefa.
+
+Pessoas:
+
+GET /people: Lista todas as pessoas.
+GET /people/:id: Retorna uma pessoa específica.
+POST /people: Cria uma nova pessoa.
+PUT /people/:id: Atualiza os dados de uma pessoa.
+DELETE /people/:id: Remove uma pessoa.
+
+Exemplo de Uso
+
+Para utilizar a API:
+
+Faça requisições HTTP para os endpoints específicos utilizando ferramentas como Postman ou curl.
+Certifique-se de incluir os cabeçalhos adequados (Content-Type, etc.) e os corpos de requisição conforme necessário.
+
+Conclusão
+
+Esta API RESTful proporciona uma interface simples e eficaz para realizar operações CRUD em tarefas e pessoas, utilizando Node.js, Express e SQLite. Ela é projetada para ser fácil de configurar, leve em recursos e adequada para aplicações que necessitam de um banco de dados incorporado e uma API robusta para manipulação de dados.
+
+Para mais detalhes sobre os endpoints específicos e exemplos de requisições, consulte a documentação detalhada ou os comentários no código fonte.
